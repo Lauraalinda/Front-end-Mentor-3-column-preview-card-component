@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display:wght@400,200=swap");
+*{
+    padding:0px;
+    margin:0px 0px;
+    box-sizing: border-box;
+    /* importance of ths */
+}
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --White: hsl(0, 0%, 100%);
+}
+.container{
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    margin:100px 20px 100px 20px;
+    
+    border-radius: 500px;
+    /* How to add border radius */
+}
+
+/* BUTTONS */
+.btn{
+  border:none;
+  background-color: var(--White);
+  padding: 12px 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-family: 'Lexend Deca', sans-serif;
+  /* How to style all buttons at once */
+}
+.btn:hover{
+    background-color:#19B89D;
+    color:var(--White);
+}
+#orangebtn{
+    color:var(--Brightorange);
+}
+#darkcyanbtn{
+    color:var(--Darkcyan);
+}
+#verydarkcyanbtn{
+    color:var(--Verydarkcyan);
+}
+
+/*CARDS */
+.card{
+    width:290px;
+    padding:30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color:var(--White);
+}
+
+.card h2{
+    padding: 20px 0px 20px 0px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    letter-spacing: 1px;
+} 
+
+.card p{
+    width:230px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 200;
+} 
+
+#orangecard{
+    background-color: var(--Brightorange);
+ 
+}
+#darkcyancard{
+    background-color: var(--Darkcyan);
+    
+}
+#verydarkcyancard{
+    background-color: var(--Verydarkcyan);
+    
+}
+
+/* Mobile Concerns - Centering the container and adding a radius to it */
+
+@media screen and (min-width: 768px){
+    .container{
+        justify-content: center;
+        display:flex;
+        flex-direction: row;
+    }
+}
